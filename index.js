@@ -22,7 +22,7 @@ app.get("/api/reviews/:locationId", async (req, res) => {
   const { locationId } = req.params;
   await axios
     .get(
-      `http://ec2-52-53-252-70.us-west-1.compute.amazonaws.com:3000/api/reviews/${locationId}`
+      `http://ec2-54-183-24-91.us-west-1.compute.amazonaws.com/3000/api/reviews/${locationId}`
     )
     .then(result => {
       res.send(result.data);
@@ -34,7 +34,7 @@ app.get("/api/reserve/:locationId", async (req, res) => {
   const { locationId } = req.params;
   await axios
     .get(
-      `http://ec2-18-224-183-60.us-east-2.compute.amazonaws.com:3002/api/reserve/${locationId}`
+      `http://ec2-52-14-244-249.us-east-2.compute.amazonaws.com:3002/api/reserve/${locationId}`
     )
     .then(result => {
       res.send(result.data);
@@ -49,7 +49,7 @@ app.get("/api/reserve/dates/:check:out", async (req, res) => {
   const { out } = req.params;
   await axios
     .get(
-      `http://ec2-18-224-183-60.us-east-2.compute.amazonaws.com:3002/api/reserve/dates/${out}`
+      `http://ec2-52-14-244-249.us-east-2.compute.amazonaws.com:3002/api/reserve/dates/${out}`
     )
     .then(result => {
       res.send(result.data);
