@@ -1,17 +1,14 @@
 #reserve {
-  margin-left: 11%;
-  /* margin-right: 25%; */
+  margin-left: 2%;
+  margin-right: 30%;
 }
-
 #location-info-here {
-  float: left;
+  margin-left: 25%;
 }
-
 #sectional-portion {
   display: flex;
 }
-
-#root {
-  margin-left: 6%;
-  margin-right: 14%;
+.photo-gallery {
+  margin-left: 15%;
+  margin-right: 15%;
 }
