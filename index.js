@@ -67,7 +67,6 @@ app.post(
 );
 
 app.get("/api/location/1", async (req, res) => {
-  // const { locationId } = req.body;
   await axios
     .get(
       `http://ec2-18-144-27-212.us-west-1.compute.amazonaws.com:4001/api/location/1`
@@ -79,7 +78,6 @@ app.get("/api/location/1", async (req, res) => {
 });
 
 app.get("/api/user/1", async (req, res) => {
-  // const { locationId } = req.body;
   await axios
     .get(
       `http://ec2-18-144-27-212.us-west-1.compute.amazonaws.com:4001/api/user/1`
@@ -101,19 +99,21 @@ app.get("/api/amenities/1", async (req, res) => {
     });
   res.end();
 });
-// app
-// .get("/photogallery", async (req, res) => {
-//   await axios
-//     .get("http://localhost:3001/photogallery")
-//     .then(result => {
-//       res.send(result.data);
-//     })
-//     .catch(err => {
-//       if (err) {
-//         throw err;
-//       }
-//     });
-// });
+
+app.get("/photogallery", async (req, res) => {
+  await axios
+    .get(
+      "http://ec2-13-52-182-227.us-west-1.compute.amazonaws.com:3001/photogallery"
+    )
+    .then(result => {
+      res.send(result.data);
+    })
+    .catch(err => {
+      if (err) {
+        throw err;
+      }
+    });
+});
 
 app.listen(8080, () => {
   console.log("Listening on 8080");
