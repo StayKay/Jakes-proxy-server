@@ -1,6 +1,6 @@
 #reserve {
-  margin-left: 2%;
-  margin-right: 25%;
+  margin-left: 11%;
+  /* margin-right: 25%; */
 }
 
 #location-info-here {
@@ -9,4 +9,9 @@
 
 #sectional-portion {
   display: flex;
+}
+
+#root {
+  margin-left: 6%;
+  margin-right: 14%;
 }
