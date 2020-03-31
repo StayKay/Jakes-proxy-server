@@ -1,0 +1,12 @@
+#reserve {
+  margin-left: 2%;
+  margin-right: 25%;
+}
+
+#location-info-here {
+  float: left;
+}
+
+#sectional-portion {
+  display: flex;
+}
