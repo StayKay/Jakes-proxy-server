@@ -22,7 +22,7 @@ app.get("/api/reviews/:locationId", async (req, res) => {
   const { locationId } = req.params;
   await axios
     .get(
-      `http://ec2-54-183-24-91.us-west-1.compute.amazonaws.com/3000/api/reviews/${locationId}`
+      `http://ec2-54-183-24-91.us-west-1.compute.amazonaws.com:3000/api/reviews/${locationId}`
     )
     .then(result => {
       res.send(result.data);
